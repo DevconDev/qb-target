@@ -70,7 +70,81 @@ Config.TargetBones = {
 }
 
 Config.TargetModels = {
-
+	["burgershotgarage"] = {
+			models = {
+				"ig_floyd"
+			},
+			options = {
+				{
+					type = "client",
+					event = "garage:BurgerShotGarage",
+					icon = "fas fa-car",
+					label = "BurgerShot Garage",
+					job = "burgershot",
+				}
+			},
+			distance = 2.5,
+		},
+		["drinkVending"] = {
+			models =     {
+				"prop_vend_soda_01",
+				"prop_vend_soda_02",
+				"prop_vend_water_01",
+			},
+			options = {
+				{
+					type = "client",
+					event = 'vendingDrink:buy',
+					icon = "fas fa-shopping-basket",
+					label = "Insert Coin",
+				},
+			},
+			distance = 2.5
+		},
+		["vendingSnack"] = {
+			models =     {
+				"prop_vend_snak_01",
+				"prop_vend_snak_01_tu",
+			},
+			options = {
+				{
+					type = "client",
+					event = 'vendingSnack:buy',
+					icon = "fas fa-shopping-basket",
+					label = "Insert Coin",
+				},
+			},
+			distance = 2.5
+		},
+		["vendingCoffee"] = {
+			models =     {
+				"prop_vend_coffe_01",
+				"apa_mp_h_acc_coffeemachine_01",
+			},
+			options = {
+				{
+					type = "client",
+					event = 'vendingCoffee:buy',
+					icon = "fas fa-shopping-basket",
+					label = "Insert Coin",
+				},
+			},
+			distance = 2.5
+		},
+		["ems docmz"] = {
+			models = {
+				"s_m_m_doctor_01",
+			},
+			options = {
+				{
+					type = "client",
+					event = "qb-ambulancejob:checkin",
+					icon = "fas fa-circle",
+					label = "Check In",
+				},
+			},
+			distance = 2.5,
+		},
 }
 
 Config.GlobalPedOptions = {
@@ -90,7 +164,14 @@ Config.GlobalPlayerOptions = {
 }
 
 Config.Peds = {
-
+	{                  --EMS DOCMZ
+	model = 's_m_m_doctor_01',
+	coords = vector4(-435.19, -324.14, 34.91, 153.41),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
 }
 
 -------------------------------------------------------------------------------
