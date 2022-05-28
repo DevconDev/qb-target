@@ -157,6 +157,53 @@ Config.TargetModels = {
 			},
 			distance = 2.5,
 		},
+		["bank teller"] = {
+			models = {
+				"u_m_m_bankman",
+			},
+			options = {
+				{
+					type = "client",
+					event = "qb-banking:openBankScreen",
+					icon = "fas fa-circle",
+					label = "Access Account",
+				},
+			},
+			distance = 2.5,
+		},
+		["stealing"] = {
+			models = {
+				"v_ret_247shelves01",
+				"v_ret_247shelves02",
+				"v_ret_247shelves03",
+				"v_ret_247shelves04",
+				"v_ret_247shelves05"
+			},
+			options = {
+				{
+					type = "client",
+					event = "qb-shoplifting:client:doStuff",
+					icon = "fas fa-toolbox",
+					label = "Shoplift",
+				}
+			},
+			distance = 1.0
+		},
+	
+			["stealAlc"] = {
+			models = {
+				"v_ret_ml_liqshelfc",
+			},
+			options = {
+				{
+					type = "client",
+					event = "qb-shoplifting:client:shopLiftAcohol",
+					icon = "fas fa-toolbox",
+					label = "Shoplift Alcohol",
+				}
+			},
+			distance = 1.0
+		},
 }
 
 Config.GlobalPedOptions = {
@@ -184,6 +231,81 @@ Config.Peds = {
 	invincible = true,
 	blockevents = true
 },
+----banks
+{ 
+	model = 'u_m_m_bankman', ---legionpark
+	coords = vector4(149.45, -1042.13, 29.37, 338.33),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+{                  --near pink cage
+	model = 'u_m_m_bankman',
+	coords = vector4(313.75, -280.45, 54.16, 334.3),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+{                  --near LSC
+	model = 'u_m_m_bankman',
+	coords = vector4(-351.41, -51.27, 49.04, 340.99),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+{                  --near Hayes Auto
+	model = 'u_m_m_bankman',
+	coords = vector4(-1211.94, -331.93, 37.78, 24.71),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+{                  --pacific bank
+	model = 'u_m_m_bankman',
+	coords = vector4(248.83, 224.45, 106.29, 158.88),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+{                  --pacific bank 2
+	model = 'u_m_m_bankman',
+	coords = vector4(247.03, 225.0, 106.29, 159.76),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+
+{                  --great ocean
+	model = 'u_m_m_bankman',
+	coords = vector4(-2961.13, 482.85, 15.7, 83.25),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+{                  --sandy shores
+	model = 'u_m_m_bankman',
+	coords = vector4(1174.98, 2708.21, 38.09, 175.52),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+{                  --paleto
+	model = 'u_m_m_bankman',
+	coords = vector4(-112.22, 6471.03, 31.63, 131.47),
+	minusOne = true,
+	freeze = true,
+	invincible = true,
+	blockevents = true
+},
+
 }
 
 -------------------------------------------------------------------------------
